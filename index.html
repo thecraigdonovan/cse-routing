@@ -25,9 +25,9 @@
           "data": "{\n  \"max_event_count\": 1,\n  \"owner\": \"https://api.calendly.com/event_types/632d823a-7e7a-45d1-a5a8-bcb5890644d2\",\n  \"owner_type\": \"EventType\"\n}"
         };
     
-        $.ajax(settings).done(function (response) {
+        $.ajax(settings).done(function () {
             console.log(response);
-            $("one-time-link").html(response.resource.booking_url);
+            $(".one-time-link").html(response.resource.booking_url);
         });
     </script>
   </body>
