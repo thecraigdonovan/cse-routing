@@ -28,6 +28,8 @@
         $.ajax(settings).done(function (response) {
             console.log(response);
             $(".one-time-link").html(response.resource.booking_url);
+            $(".one-time-link").attr("href", response.resource.booking_url)
+
         });
     </script>
   </body>
